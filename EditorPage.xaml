@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoEditorApp.EditorPage">
+
+    <VerticalStackLayout Padding="20">
+
+        <Image x:Name="photoImage"
+           Source="dotnet_bot.png"
+           Aspect="AspectFit"
+           HeightRequest="300"
+           WidthRequest="300"
+           HorizontalOptions="Center" />
+
+        <Slider x:Name="brightnessSlider"
+            Minimum="0"
+            Maximum="100"
+            Value="50"
+            ValueChanged="OnBrightnessChanged" />
+
+        <Slider x:Name="contrastSlider"
+            Minimum="0"
+            Maximum="100"
+            Value="50"
+            ValueChanged="OnContrastChanged" />
+
+        <Slider x:Name="saturationSlider"
+            Minimum="0"
+            Maximum="2"
+            Value="1"
+            ValueChanged="OnSaturationChanged" />
+
+        <Slider x:Name="hueSlider"
+            Minimum="0"
+            Maximum="360"
+            Value="0"
+            ValueChanged="OnHueChanged" />
+
+        <Slider x:Name="gammaSlider"
+            Minimum="0.1"
+            Maximum="2"
+            Value="1"
+            ValueChanged="OnGammaChanged" />
+
+        <Button Text="Apply Grayscale Filter"
+            Clicked="OnApplyGrayscaleFilterClicked" />
+
+        <Button Text="Apply Sepia Filter"
+            Clicked="OnApplySepiaFilterClicked" />
+
+        <Button Text="Invert Colors"
+            Clicked="OnInvertColorsClicked" />
+
+        <Button Text="Apply Blur"
+            Clicked="OnApplyBlurClicked" />
+
+        <Button Text="Save Settings"
+            Clicked="OnSaveSettingsClicked" />
+
+        <Button Text="Load Photo"
+            Clicked="OnLoadPhotoClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

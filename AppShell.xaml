@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PhotoEditorApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PhotoEditorApp"
+    Shell.FlyoutBehavior="Disabled"
+    Title="PhotoEditorApp">
+
+    <TabBar>
+        <Tab Title="Галерея" Route="Gallery">
+            <ShellContent ContentTemplate="{DataTemplate local:GalleryPage}" />
+        </Tab>
+
+        <Tab Title="Альбомы" Route="Albums">
+            <ShellContent ContentTemplate="{DataTemplate local:AlbumsPage}" />
+        </Tab>
+
+        <Tab Title="Резерв" Route="Reserve">
+            <ShellContent ContentTemplate="{DataTemplate local:ReservePage}" />
+        </Tab>
+    </TabBar>
+
+</Shell>

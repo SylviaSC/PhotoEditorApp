@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoEditorApp", "PhotoEditorApp.csproj", "{637C2DE3-E7A4-4EB8-A51A-A9E366185DCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{637C2DE3-E7A4-4EB8-A51A-A9E366185DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{637C2DE3-E7A4-4EB8-A51A-A9E366185DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{637C2DE3-E7A4-4EB8-A51A-A9E366185DCB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{637C2DE3-E7A4-4EB8-A51A-A9E366185DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{637C2DE3-E7A4-4EB8-A51A-A9E366185DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{637C2DE3-E7A4-4EB8-A51A-A9E366185DCB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {011EB883-E63E-49A0-906C-12B92044151F}
+	EndGlobalSection
+EndGlobal

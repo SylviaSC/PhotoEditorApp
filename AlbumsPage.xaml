@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoEditorApp.AlbumsPage">
+
+    <CollectionView x:Name="albumsView"
+                   ItemsLayout="VerticalGrid, 2"
+                   ItemTemplate="{StaticResource AlbumTemplate}"
+                   SelectionChanged="OnAlbumSelected" />
+
+    <ContentPage.Resources>
+        <DataTemplate x:Key="AlbumTemplate">
+            <Grid Padding="5">
+                <Image Source="{Binding}"
+                       Aspect="AspectFill"
+                       HeightRequest="100"
+                       WidthRequest="100" />
+                <Label Text="{Binding Name}"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       BackgroundColor="Black"
+                       TextColor="White"
+                       Padding="5" />
+            </Grid>
+        </DataTemplate>
+    </ContentPage.Resources>
+
+</ContentPage>
